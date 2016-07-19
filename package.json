@@ -1,6 +1,6 @@
 {
-  "name": "@heinolenting/symagic-dependency-a",
-  "version": "1.0.0",
+  "name": "symagic-dependency-a",
+  "version": "1.0.1-beta.1",
   "description": "Symagic dependency A",
   "main": "index.js",
   "scripts": {

@@ -1,0 +1,99 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'publish',
+1 verbose cli   '--tag',
+1 verbose cli   'beta' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.1
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/heinolenting/Desktop/test-npm-setup/symagic-dependency-a',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/heinolenting/.npm/symagic-dependency-a/1.0.0/package.tgz not in flight; packing
+9 verbose tar pack [ '/Users/heinolenting/.npm/symagic-dependency-a/1.0.0/package.tgz',
+9 verbose tar pack   '/Users/heinolenting/Desktop/test-npm-setup/symagic-dependency-a' ]
+10 verbose tarball /Users/heinolenting/.npm/symagic-dependency-a/1.0.0/package.tgz
+11 verbose folder /Users/heinolenting/Desktop/test-npm-setup/symagic-dependency-a
+12 info prepublish symagic-dependency-a@1.0.0
+13 verbose addLocalTarball adding from inside cache /Users/heinolenting/.npm/symagic-dependency-a/1.0.0/package.tgz
+14 silly cache afterAdd symagic-dependency-a@1.0.0
+15 verbose afterAdd /Users/heinolenting/.npm/symagic-dependency-a/1.0.0/package/package.json not in flight; writing
+16 verbose afterAdd /Users/heinolenting/.npm/symagic-dependency-a/1.0.0/package/package.json written
+17 silly publish { name: 'symagic-dependency-a',
+17 silly publish   version: '1.0.0',
+17 silly publish   description: 'Symagic dependency A',
+17 silly publish   main: 'index.js',
+17 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+17 silly publish   repository:
+17 silly publish    { type: 'git',
+17 silly publish      url: 'git+https://github.com/Heino-Lenting-Symagic/symagic-dependency-a.git' },
+17 silly publish   author: '',
+17 silly publish   license: 'ISC',
+17 silly publish   bugs: { url: 'https://github.com/Heino-Lenting-Symagic/symagic-dependency-a/issues' },
+17 silly publish   homepage: 'https://github.com/Heino-Lenting-Symagic/symagic-dependency-a#readme',
+17 silly publish   readme: '# symagic-dependency-a\n',
+17 silly publish   readmeFilename: 'README.md',
+17 silly publish   gitHead: '83774a95a80d80c4161687c3934faee1630d10f2',
+17 silly publish   _id: 'symagic-dependency-a@1.0.0',
+17 silly publish   _shasum: 'd4143818479dcce3130a09c5d54d0643d9350f12',
+17 silly publish   _from: '.' }
+18 verbose getPublishConfig undefined
+19 silly mapToRegistry name symagic-dependency-a
+20 silly mapToRegistry scope (from config) @heinolenting
+21 verbose mapToRegistry no registry URL found in config for scope @heinolenting
+22 silly mapToRegistry using default registry
+23 silly mapToRegistry registry https://registry.npmjs.org/
+24 silly mapToRegistry uri https://registry.npmjs.org/symagic-dependency-a
+25 verbose publish registryBase https://registry.npmjs.org/
+26 silly publish uploading /Users/heinolenting/.npm/symagic-dependency-a/1.0.0/package.tgz
+27 verbose request uri https://registry.npmjs.org/symagic-dependency-a
+28 verbose request sending authorization for write operation
+29 info attempt registry request try #1 at 4:26:10 PM
+30 verbose request using bearer token for auth
+31 verbose request id 7fd0a40d41ee178d
+32 http request PUT https://registry.npmjs.org/symagic-dependency-a
+33 http 403 https://registry.npmjs.org/symagic-dependency-a
+34 verbose headers { 'content-type': 'application/json',
+34 verbose headers   'cache-control': 'max-age=300',
+34 verbose headers   'content-length': '95',
+34 verbose headers   'accept-ranges': 'bytes',
+34 verbose headers   date: 'Tue, 19 Jul 2016 14:26:11 GMT',
+34 verbose headers   via: '1.1 varnish',
+34 verbose headers   connection: 'keep-alive',
+34 verbose headers   'x-served-by': 'cache-ams4450-AMS',
+34 verbose headers   'x-cache': 'MISS',
+34 verbose headers   'x-cache-hits': '0',
+34 verbose headers   'x-timer': 'S1468938371.017411,VS0,VE937',
+34 verbose headers   vary: 'Accept-Encoding' }
+35 verbose request invalidating /Users/heinolenting/.npm/registry.npmjs.org/symagic-dependency-a on PUT
+36 error publish Failed PUT 403
+37 verbose stack Error: "You cannot publish over the previously published version 1.0.0." : symagic-dependency-a
+37 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+37 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+37 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+37 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:198:22)
+37 verbose stack     at emitTwo (events.js:87:13)
+37 verbose stack     at Request.emit (events.js:172:7)
+37 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1063:14)
+37 verbose stack     at emitOne (events.js:82:20)
+37 verbose stack     at Request.emit (events.js:169:7)
+37 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1009:12)
+38 verbose statusCode 403
+39 verbose pkgid symagic-dependency-a
+40 verbose cwd /Users/heinolenting/Desktop/test-npm-setup/symagic-dependency-a
+41 error Darwin 15.5.0
+42 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish" "--tag" "beta"
+43 error node v4.2.1
+44 error npm  v2.14.7
+45 error code E403
+46 error "You cannot publish over the previously published version 1.0.0." : symagic-dependency-a
+47 error If you need help, you may report this error at:
+47 error     <https://github.com/npm/npm/issues>
+48 verbose exit [ 1, true ]
